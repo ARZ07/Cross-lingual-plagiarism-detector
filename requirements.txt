@@ -1,0 +1,8 @@
+flask
+sentence-transformers
+transformers
+torch
+scikit-learn
+beautifulsoup4
+httpx
+google-api-python-client

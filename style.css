@@ -1,0 +1,128 @@
+cyberpunk_style = """
+<style>
+    body {
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(135deg, #121212 50%, #1e1e1e 50%);
+        color: #e0e0e0;
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;
+        height: 100vh;
+        scroll-behavior: smooth;
+        position: relative;
+    }
+
+    /* Container styling */
+    .container {
+        max-width: 800px;
+        width: 90%;
+        padding: 30px;
+        margin: 50px auto;
+        background: rgba(30, 30, 30, 0.9);
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        animation: neonGlow 1.5s ease-in-out infinite alternate;
+    }
+
+    .container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            135deg,
+            rgba(0, 255, 255, 0.1),
+            rgba(255, 0, 255, 0.1)
+        );
+        opacity: 0.4;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    /* Headings */
+    h1, h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
+        color: #00ffff;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+        animation: neonGlow 1.5s ease-in-out infinite alternate;
+    }
+
+    h3 {
+        font-size: 2.5em;
+        color: #ff007f;
+        margin-bottom: 10px;
+        text-shadow: 0 0 10px rgba(255, 0, 127, 0.7);
+    }
+
+    /* Buttons */
+    .button-container {
+        margin-top: 20px;
+    }
+
+    .button {
+        padding: 15px 30px;
+        font-size: 1.5em;
+        color: #ffffff;
+        background: linear-gradient(135deg, #00ffff, #ff007f);
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 6px 12px rgba(255, 0, 127, 0.5);
+        text-shadow: 0 0 5px rgba(255, 0, 127, 0.5);
+        position: relative;
+    }
+
+    .button:hover {
+        background: linear-gradient(135deg, #ff007f, #00ffff);
+        transform: scale(1.05);
+    }
+
+    .button:active {
+        transform: scale(1);
+    }
+
+    /* Textarea */
+    textarea {
+        background-color: #1a1a1a;
+        color: #00ffdd;
+        border: 2px solid #00ffdd;
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        border-radius: 4px;
+        width: 90%;
+    }
+
+    /* Lists */
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        background-color: rgba(30, 30, 30, 0.8);
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #00ffdd;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(255, 0, 127, 0.5);
+    }
+
+    /* Neon animation */
+    @keyframes neonGlow {
+        from {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        to {
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+        }
+    }
+</style>
+"""
